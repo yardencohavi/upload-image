@@ -7,23 +7,18 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Train+One&display=swap" rel="stylesheet">
-    <title>Upload-image</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    
     <form class="container">
         <label class="upload-button" for="file" style="cursor: pointer;">Upload Image</label>
         <input type="file"  accept="image/*" name="imageInput" id="file"  onchange="loadFile(event)" style="display: none;">
-
         <img id="output" width="200">
-
-        <input class="height" value="Height" type=text id="txtHeight" />
-        <input class="weight" value="Weight" type=text id="txtWidth" />
+        <input class="height" value="Height" type=text id="txtHeight"/>
+        <input class="weight" value="Weight" type=text id="txtWidth"/>
         <button class="button save" onclick="save()">Save</button>
-        <button class="button resize" onclick="resizeimage()">Resize</button> 
+        <input class="button resize" type=button value="Resize" onclick="resizeimage()" />
     </form>
-
     <!-- scripts -->
     <script src="script.js"></script>
 </body>
