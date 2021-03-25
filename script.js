@@ -1,7 +1,6 @@
 var images = [];
 var validFormats = ["jpg","png","jpeg"];
 var isValidateTypeFile = image => !!validFormats.find(format => 'image/'+format === image.type);
-
 var imageInput = document.getElementById('output');
 
 var loadFile = function(event) {
